@@ -117,6 +117,8 @@
 //                     </div>
 //                 `;
 //                 row.appendChild(movieDiv);
+//                 let keyword = document.querySelector('#searchInput');
+//                 keyword.value = '';
 //             });
 //         });
 // }
@@ -226,6 +228,8 @@ function updateRow(movies) {
             </div>
         `;
         row.appendChild(movieDiv);
+        let keyword = document.querySelector('#searchInput');
+        keyword.value = '';
     });
     }
 }
