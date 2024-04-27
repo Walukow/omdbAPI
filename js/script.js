@@ -2,7 +2,7 @@
 //     $('#row').html('');
 
 //     $.ajax({
-//         url: 'http://www.omdbapi.com',
+//         url: 'https://www.omdbapi.com',
 //         type: 'get',
 //         dataType: 'json',
 //         data: {
@@ -53,7 +53,7 @@
 
 // $('#row').on('click', '.detail', function() {
 //     $.ajax({
-//         url: 'http://www.omdbapi.com',
+//         url: 'https://www.omdbapi.com',
 //         type: 'get',
 //         dataType: 'json',
 //         data: {
@@ -98,7 +98,7 @@
 
 // function nyariFilm() {
 //     const keyword = document.querySelector('#searchInput');
-//     fetch('http://www.omdbapi.com?apikey=da3578e&s=' + keyword.value)
+//     fetch('https://www.omdbapi.com?apikey=da3578e&s=' + keyword.value)
 //         .then(response => response.json())
 //         .then(response => {
 //             let movies = response.Search;
@@ -140,7 +140,7 @@
 // document.getElementById('row').addEventListener('click', function (event) {
 //     if (event.target.classList.contains('detail')) {
 //         let imdbID = event.target.getAttribute('data-id');
-//         fetch('http://www.omdbapi.com?apikey=da3578e&i=' + imdbID)
+//         fetch('https://www.omdbapi.com?apikey=da3578e&i=' + imdbID)
 //             .then(response => response.json())
 //             .then(response => {
 //                 const modalBody = document.querySelector('.modal-body');
@@ -202,7 +202,7 @@ searchInput.addEventListener('keyup', async function (event) {
 }});
 
 function getMovies(keyword) {
-    return fetch('http://www.omdbapi.com?apikey=da3578e&s=' + keyword)
+    return fetch('https://www.omdbapi.com?apikey=da3578e&s=' + keyword)
         .then(response => response.json())
         .then(response => response.Search);
 }
@@ -243,7 +243,7 @@ row.addEventListener('click', async function(event) {
 });
 
 function getDetailMovie(idMovie) {
-    return fetch('http://www.omdbapi.com?apikey=da3578e&i=' + idMovie)
+    return fetch('https://www.omdbapi.com?apikey=da3578e&i=' + idMovie)
         .then(response => response.json())
         .then(response => response);
 }
